@@ -1,5 +1,4 @@
 ### BLOCK 1
-# !pip install scikit-fuzzy
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
@@ -78,7 +77,7 @@ def covid_severity_predictor(Spread_in_your_locality, Climate_Temp_Celsius, Body
 	severity['normal'] = y1
 	severity['severe'] = y2
 
-	severity.view()
+	# severity.view()
 
 
 	### BLOCK 7

@@ -1,4 +1,4 @@
+keyboard==0.13.5
 numpy==1.21.4
 PyQt6==6.2.2
 scikit_fuzzy==0.4.2
-matplotlib==3.5.0
