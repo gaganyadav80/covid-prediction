@@ -98,16 +98,17 @@ def covid_severity_predictor(Spread_in_your_locality, Climate_Temp_Celsius, Body
 	# Climate_Temp_Celsius = 30
 	# Body_Temp_Fahrenheit = 98
 	# Shortness_Of_Breath = 2
-
 	State = Spread_in_your_locality*100
+
 
 	predictor.input['shortBreath'] = Shortness_Of_Breath
 	predictor.input['bodyTemp'] = Body_Temp_Fahrenheit
 	predictor.input['covidcases'] = State
-
 	predictor.input['climateTemp'] = Climate_Temp_Celsius
+
 
 	predictor.compute()
 	format_float = "{:.2f}".format(predictor.output['severity']*100)
 	print("Your chances of having covid is:",format_float,"%")
 	severity.view(sim=predictor)
+	
